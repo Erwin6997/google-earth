@@ -1,0 +1,253 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+  background-color: #eee;
+}
+#page-wrapper {
+	position: relative;
+}
+li {
+	list-style: none;
+}
+a {
+	color: Black;
+	text-decoration: none;
+}
+.container {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+.btn {
+	padding: 0 10px;
+	height: 32px;
+	font-size: Arial;
+	font-weight: 800;
+	text-transform: uppercase;
+	border: 2px black solid;
+	border-radius: 3px;
+	background: transparent;
+	cursor: pointer;
+	background-color: #d6dbdf;
+}
+.grid {
+  display: flex;
+}
+header {
+	position: fixed;
+	top: 0;
+	min-height: -100px;
+	padding: 0 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #d6dbdf;
+}
+@media (max-width: 600px) {
+	header {
+		flex-wrap: wrap;
+	}
+}
+.logo {
+	width: 60vw;
+}
+@media (max-width: 650px) {
+	.logo {
+		margin-top: 15px;
+		width: 100%;
+		position: relative;
+	}
+}
+.logo>img {
+	width: 80%;
+	height: 80%;
+	max-width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: -10px;
+}
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+@media (max-width: 650px) {
+	nav {
+		margin-top: 10px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 0 50px;
+	}
+    nav li {
+    padding-bottom: 5px;
+  }
+}
+nav>ul {
+	width: 35vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+#hero {
+  position:relative;
+  top:280px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 200px;
+	margin-top: 50px;
+}
+#hero input[type="email"] #hero input[type="submit"] {
+	max-width: 275px;
+	width: 100%;
+	padding: 5px;
+	height: 30px;
+	margin: 15px 0;
+	border: 10;
+}
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 120px;
+  }
+}
+#overview .desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 125px;
+	width: 80vw;
+	padding: 5px;
+}
+@media (max-width: 550px) {
+  #overview .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #overview {
+    margin-top: 0;
+  }
+}
+
+#how-it-use {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+#how-it-use>iframe {
+	max-width: 560px;
+	width: 100%;
+}
+#install {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.inst {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: calc(100% / 3);
+	margin: 10px;
+	border: 2px solid #000;
+	border-radius: 3px;
+}
+.inst> .level {
+	background-color: #ddd;
+	color: black;
+	padding: 15px 0;
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.inst > h2 {
+  margin-top: 15px;
+}
+
+.inst > ol {
+  margin: 15px 0;
+}
+
+.inst > ol > li {
+  padding: 5px 0;
+}
+
+.inst>button {
+	border: 1;
+	margin: 15px 0;
+	background-color: #d6dbdf;
+	font-weight: 400;
+  border-radius: 8px;
+}
+.inst>button:hover {
+	background-color:  #a9afb4;
+	transition: background-color 1s;
+}
+@media (max-width: 800px) {
+	#install {
+		flex-direction: column;
+	}
+	.inst {
+		max-width: 300px;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+}
+footer {
+	margin-top: 30px;
+	background-color: #f1e9ea;
+	padding: 20px;
+}
+footer>ul {
+	display: flex;
+	justify-content: flex-end;
+}
+footer>ul>li {
+	padding: 0 10px;
+}
+footer>span {
+	margin-top: 5px;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 0.9em;
+	color: #444;
+}
+.imagee {
+	background-image: url("https://i.ytimg.com/vi/2OPCLMKa3mI/maxresdefault.jpg");
+	height: 500px;
+	max-width: 1400px;
+	width: 100%;
+	margin-bottom: 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;
+}
